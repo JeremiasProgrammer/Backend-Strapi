@@ -801,7 +801,7 @@ export interface ApiBookBook extends Schema.CollectionType {
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
-    slug: Attribute.UID<'api::book.book', 'title'> & Attribute.Required;
+    slug: Attribute.UID<'api::book.book', 'title'>;
     image: Attribute.Media<'images'> & Attribute.Required;
     price: Attribute.Integer &
       Attribute.Required &
